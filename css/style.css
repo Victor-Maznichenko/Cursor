@@ -5148,6 +5148,10 @@ body {
   transition: all .3s;
 }
 
+.slick-slider .slick-track, .slick-slider .slick-list {
+  padding-bottom: 0 !important;
+}
+
 @media (max-width: 1260px) {
   .header__main {
     padding: 0 50px;
