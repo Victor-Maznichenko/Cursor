@@ -4766,42 +4766,6 @@ body {
   opacity: 1;
 }
 
-.main {
-  min-height: 780px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.main__aside {
-  max-width: 105px;
-  width: 100%;
-  min-height: 780px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 0.1;
-      -ms-flex-positive: 0.1;
-          flex-grow: 0.1;
-}
-
-.main .aside__left {
-  border-right: 1px solid #E9E9E9;
-}
-
-.main .aside__right {
-  border-left: 1px solid #E9E9E9;
-}
-
 .aside-social__item {
   display: block;
 }
@@ -4888,6 +4852,39 @@ body {
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3;
+  min-height: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__aside {
+  max-width: 105px;
+  width: 100%;
+  min-height: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0.1;
+      -ms-flex-positive: 0.1;
+          flex-grow: 0.1;
+}
+
+.main .aside__left {
+  border-right: 1px solid #E9E9E9;
+}
+
+.main .aside__right {
+  border-left: 1px solid #E9E9E9;
 }
 
 .main__wrapper {
@@ -4909,6 +4906,7 @@ body {
 .main__info {
   padding-top: 115px;
   padding-left: 55px;
+  max-width: 60%;
 }
 
 .main__link {
@@ -4938,6 +4936,7 @@ body {
   font-size: 145px;
   line-height: 94%;
   margin-bottom: 75px;
+  overflow: hidden;
 }
 
 .main__description {
@@ -5184,6 +5183,9 @@ body {
     min-height: 670px;
   }
   .main__aside {
+    min-height: 670px;
+  }
+  .main__wrapper {
     min-height: 670px;
   }
 }
@@ -5436,6 +5438,9 @@ body {
 }
 
 @media (max-width: 800px) {
+  .main__info {
+    max-width: 100%;
+  }
   .main__slider {
     display: none;
   }
